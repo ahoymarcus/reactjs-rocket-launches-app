@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* globals */
+
+
+/* end of globals */
+/* Navbar */
+.nav-container {
+	color: #932222;
+	background-color: gray;
+	padding: 20px;
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-links {
+	color: #e9c9e9;
+	text-decoration: none;
+	padding: 5px;
+}
+
+/* end of navbar */
+/* Hero */
+
+
+/* End of Hero */
+
+/* Title */
+
+
+/* end of Title */
+
+/* services */
+
+  
+	
+/*end of services */
+/* features */
+
+
+
+/* end features */
+
