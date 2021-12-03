@@ -39,14 +39,33 @@
 }
 
 
-
-.home-info ul {
-	
-}
-
 .home-main img {
 	width: 100%;
 }
 
+
+@media only screen and (min-width: 650px) {
+	.home-main img {
+		max-height: 285px;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+	.home-header {
+		padding-top: 13px;
+	}
+	.home-header p {
+		max-width: 95%;
+	}
+	.home-info h2 {
+		margin-bottom: 0px;
+	}
+	.home-info li {
+		font-size: 1.3rem;
+
+		margin-left: 0px;
+		text-align: center;
+	}
+}
 
 
