@@ -9,10 +9,10 @@ const Navbar = () => {
 		<div className="nav-container">
 			<h2><Link to="/" className="logo" >Rocket-X Launches App</Link></h2>
 			<div>
-				<Link to="/" className="nav-links" >
+				<Link to="/login" className="nav-links" >
 					Login
 				</Link>
-				<Link to="/rooms" className="nav-links" >
+				<Link to="/launches" className="nav-links" >
 					Launches
 				</Link>
 			</div>

@@ -11,7 +11,7 @@ import Error from './pages/Error';
 
 // components
 import Navbar from './components/Navbar';
-
+import Login from './pages/Login';
 
 
 function App() {
@@ -23,8 +23,10 @@ function App() {
 				<Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+					<Route path="/login" element={<Login /> } />
           <Route path="*" element={<Error />} />
         </Routes>
+				<img className="rocket-image" src="./images/space-x-rest-api.jpg" alt="Plataforma de lançamento da Space X" />
       </Router>
       
     </>

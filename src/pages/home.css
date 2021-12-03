@@ -39,16 +39,13 @@
 }
 
 
-.home-main img {
-	width: 100%;
-}
 
-
-@media only screen and (min-width: 650px) {
-	.home-main img {
-		max-height: 285px;
+@media only screen and (min-width: 640px) {
+	.home-header, .home-info {
+		min-height: 280px;
 	}
 }
+
 
 @media only screen and (min-width: 860px) {
 	.home-header {

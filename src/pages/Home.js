@@ -28,7 +28,7 @@ const Home = () => {
 									<li>Past Launches</li>
 								</ul>
 							</section>
-							<img src="./images/space-x-rest-api.jpg" alt="Plataforma de lançamento da Space X" />
+							
 						</main>
         </div>
     );

@@ -26,9 +26,25 @@ li {
 }
 
 
+.rocket-image {
+	width: 100%;
+}
+
+@media only screen and (min-width: 450px) {
+	.rocket-image img {
+		max-height: 285px;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.rocket-image img {
+		max-height: 100%;
+	}
+}
+
 @media only screen and (min-width: 860px) {
 	h1 {
-		/*margin: 10px 0 35px 0;*/
+		margin: 10px 0 35px 0;
 		font-size: 2.6rem;
 	}
 }
