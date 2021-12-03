@@ -1,18 +1,25 @@
-# Rocket-X | React-JS
+# React-JS Rocket-X Launches App
 
 <br />
 
-O projeto que consome dados tando de um arquivo, quanto de uma API, para renderizar os dados na forma de um site de serviços de aluguel de quartos para veraneio.
+O App foi escrito para ser cliente de uma API que consome dados de outra API externa, a API da **SpaceX REST API**. Dessa forma, a API a que se conecta este App cria um pequeno serviço de dados, na forma de uma API REST, disponibilizando apenas as seguintes rotas para os seguintes dados da API externa:[^1]
+
+- Próximo lançamento;
+- Último lançamento;
+- Próximos lançamentos;
+- Lançamentos passados;
 
 <br />
 
-**O projeto pretende se valer do uso de uma série de funcionalidades do ecossistema do React como UseRouter, UseContext, entre outros.**
+[SpaceX REST API - Github](https://github.com/r-spacex/SpaceX-API)
 
 <br />
 
 
+<br />
 
-[]()
+[SpaceX REST API - Github](https://github.com/r-spacex/SpaceX-API)
+
 
 <br />
 
@@ -40,4 +47,4 @@ O projeto que consome dados tando de um arquivo, quanto de uma API, para renderi
 <br />
 <br />
 
-[^1] John Smilga - Freecodecamp.org.
+

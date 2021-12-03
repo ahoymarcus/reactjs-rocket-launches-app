@@ -7,13 +7,13 @@ const Navbar = () => {
 	
 	return (
 		<div className="nav-container">
-			<h2>The Space X API Launch</h2>
+			<h2><Link to="/" className="logo" >Rocket-X Launches App</Link></h2>
 			<div>
 				<Link to="/" className="nav-links" >
-					Home
+					Login
 				</Link>
 				<Link to="/rooms" className="nav-links" >
-					Space X
+					Launches
 				</Link>
 			</div>
 		</div>
