@@ -11,6 +11,8 @@ const AppProvider = ({ children }) => {
 	const [ username, setUsername ] = useState('');
 	const [ password, setPassword ] = useState('');
 	
+	
+	// https://www.digitalocean.com/community/tutorials/how-to-call-web-apis-with-the-useeffect-hook-in-react
 	// https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications
 	const fetchLoinToken = async () => {
 		try {

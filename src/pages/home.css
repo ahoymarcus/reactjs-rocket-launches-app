@@ -45,20 +45,23 @@
 
 
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 600px) {
 	.home-header, .home-info {
-		min-height: 280px;
+		min-height: 270px;
 	}
 	.home-header p {
 		max-width: 70%;
 		font-size: 1.3rem;
-		margin-bottom: 10px;
+		margin-bottom: 35px;
 		line-height: 30px;
 	}
 }
 
 
 @media only screen and (min-width: 860px) {
+	.home-header, .home-info {
+		min-height: 260px;
+	}
 	.home-header {
 		padding-top: 13px;
 	}
