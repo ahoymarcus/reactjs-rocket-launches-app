@@ -6,13 +6,24 @@ import { useGlobalContext } from '../context';
 
 
 const Login = () => {
-	const { username, setUsername, password, setPassword } = useGlobalContext();
+	const [ username, setUsername ] = useState('');
+	const [ password, setPassword ] = useState('');
+	const { setCredentials } = useGlobalContext();
 	
 	
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();	
+		
+		if (username && password) {
+			setCredentials({
+				username,
+				password
+			});
 			
+			console.log('setando credenciais.....');
+		}
+		
 		setUsername('');
 		setPassword('');
 	};
@@ -48,7 +59,7 @@ const Login = () => {
 								Senha
 							</label>
 							<input
-								type="text"
+								type="password"
 								id="password"
 								placeholder="sua senha"
 								value={password}
