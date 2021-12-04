@@ -19,6 +19,7 @@
 .login-header p {
 	text-transform: capitalize;
 	max-width: 800px;
+	color: #fb8787cc;
 }
 
 .login-info {
@@ -49,6 +50,7 @@
 	font-size: 1.2rem;
 	font-weight: bold;
 	margin-left: 10px;
+	color: #fb8787cc;
 }
 
 .login-form input {
@@ -58,7 +60,21 @@
 	width: 300px;
 }
 
+.btn-submit {
+	position: relative;
+	bottom: 15px;
+	padding: 5px;
+	border-radius: 3px;
+	color: black;
+	background-image: linear-gradient(#fb8787cc, #ff00001f, #fb8787cc);
+}
 
+
+@media only screen and (min-width: 640px) {
+	.btn-submit {
+		width: 100px;
+	}
+}
 
 @media only screen and (min-width: 860px) {
 	.login-header {
@@ -70,7 +86,9 @@
 	.login-info h2 {
 		margin-bottom: 0px;
 	}
-
+	.btn-submit {
+		width: 120px;
+	}
 }
 
 

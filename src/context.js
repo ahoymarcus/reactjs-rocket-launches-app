@@ -1,19 +1,26 @@
 import React, { useState, useContext, useEffect, useCallback } from 'react';
 
 
-const url = '';
+const url = 'http://localhost:3000';
 
 
 const AppContext = React.createContext();
 
 
 const AppProvider = ({ children }) => {
+	const [ username, setUsername ] = useState('');
+	const [ password, setPassword ] = useState('');
 	
 	
 	
 	return (
 		<AppContext.Provider 
-			value="Global context..."
+			value={{
+				username, 
+				setUsername,
+				password, 
+				setPassword
+			}}
 		>
 			{ children }
 		</AppContext.Provider>

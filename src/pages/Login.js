@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './login.css';
+import { useGlobalContext } from '../context';
 
 
 
 const Login = () => {
+	const { username, setUsername, password, setPassword } = useGlobalContext();
+	
+	
+	
+	const handleSubmit = (e) => {
+		e.preventDefault();	
+			
+		setUsername('');
+		setPassword('');
+	};
 	
 	
 	return (
@@ -17,7 +28,8 @@ const Login = () => {
 			<main className="login-main">
 				<section className="login-info">
 					<h2>Cadastre usuário</h2>
-					<form className="login-form" >
+					<form className="login-form" onSubmit={handleSubmit} >
+						
 						<div className="input-container">
 							<label htmlFor="username">
 								Usuário
@@ -26,6 +38,9 @@ const Login = () => {
 								type="text"
 								id="username"
 								placeholder="nome do usuário"
+								value={username}
+								onChange={(e) => setUsername(e.target.value)}
+								required
 							/>
 						</div>
 						<div className="input-container">
@@ -36,8 +51,14 @@ const Login = () => {
 								type="text"
 								id="password"
 								placeholder="sua senha"
+								value={password}
+								onChange={(e) => setPassword(e.target.value)}
+								required
 							/>
 						</div>
+						<button type="submit" className="btn-submit">
+							Submit
+						</button>
 					</form>
 				</section>
 				

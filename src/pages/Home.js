@@ -7,7 +7,7 @@ import { useGlobalContext } from '../context';
 
 const Home = () => {
 		const data = useGlobalContext();
-		console.log(data);
+		//console.log(data);
 		
 		
 
