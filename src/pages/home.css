@@ -7,6 +7,11 @@
 	background-color: #1313fdbf; /*#0404ffbf; #0404ff;*/
 }
 
+.home-list {
+	background-color: #000938;
+	padding: 20px;
+}
+
 .home-header {
 	display: flex;
 	flex-direction: column;

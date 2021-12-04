@@ -10,6 +10,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
 	const [ credentials, setCredentials ] = useState({});
 	const [ token, setToken ] = useState('');
+	const [ queryPage, setQueryPage ] = useState('');
 	
 	
 
@@ -44,7 +45,9 @@ const AppProvider = ({ children }) => {
 		<AppContext.Provider 
 			value={{
 				setCredentials,
-				token
+				token,
+				queryPage,
+				setQueryPage
 			}}
 		>
 			{ children }

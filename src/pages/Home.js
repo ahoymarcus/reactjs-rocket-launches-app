@@ -7,9 +7,13 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-		const { token } = useGlobalContext();
-		//console.log(data);
+		const { token, queryPage, setQueryPage } = useGlobalContext();
 		
+		
+		
+		// const handleQuery = (query) => {
+			// setQueryPage(query);
+		// };
 		
 
     return (
@@ -25,21 +29,24 @@ const Home = () => {
 								<ul>
 									<li>
 										Next Launch 
-										{token && <span><Link to="/launches" className="home-links" > just hold tight...</Link></span>}
+										{token && <span className="home-links" onClick={setQueryPage('next')} > just hold tight...</span>}
 									</li>
 									<li>
 										Next Launches 
-										{token && <span><Link to="/launches" className="home-links" > let's go...</Link></span>}
+										{token && <span className="home-links" onClick={setQueryPage('next-launches')} > let's go...</span>}
 									</li>
 									<li>
 										Last Launch 
-										{token && <span><Link to="/launches" className="home-links" > here...</Link></span>}
+										{token && <span className="home-links" onClick={setQueryPage('last')} > here...</span>}
 									</li>
 									<li>
 										Past Launches 
-										{token && <span><Link to="/launches" className="home-links" > just come along...</Link></span>}
+										{token && <span className="home-links" onClick={setQueryPage('past')} > just come along...</span>}
 									</li>
 								</ul>
+							</section>
+							<section className="home-list">
+								<p>{queryPage}</p>
 							</section>
 							
 						</main>

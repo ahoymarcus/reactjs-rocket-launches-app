@@ -1,0 +1,62 @@
+.launches-container {
+	background-color: #2a343c;
+	color: #e9c9e9cc;
+}
+
+.launches-header, .launches-info {
+	background-color: #1313fdbf; /*#0404ffbf; #0404ff;*/
+	
+}
+
+.launches-header {
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	padding: 15px 20px 5px 20px;
+}
+
+.launches-header p {
+	text-transform: capitalize;
+	max-width: 800px;
+	color: #fb8787cc;
+}
+
+.launches-info {
+	/*margin: 0px 0 0px 30px;*/
+	padding: 10px 20px 0px 20px;
+	justify-content: flex-start;
+}
+
+.launches-info h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 580px) {
+	.launches-header, .launches-info {
+		min-height: 260px;
+	}
+}
+
+@media only screen and (min-width: 860px) {
+	.launches-header {
+		padding-top: 13px;
+	}
+	.launches-header p {
+		max-width: 95%;
+	}
+	.launches-info h2 {
+		margin-bottom: 0px;
+	}
+}
+
+
