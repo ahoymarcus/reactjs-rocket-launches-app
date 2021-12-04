@@ -11,7 +11,7 @@ O App foi escrito para ser cliente de uma API que consome dados de outra API ext
 
 <br />
 
-[SpaceX](https://www.spacex.com/)
+[O site da empresa SpaceX](https://www.spacex.com/)
 
 <br />
 
@@ -19,15 +19,15 @@ O App foi escrito para ser cliente de uma API que consome dados de outra API ext
 
 <br />
 
-### I:
+### Imagem da página de Login vista em dispositivo pequeno:
 
-![Imagem da página Home do Cocktails App](/public/images/)
+![Imagem da página de Login vista em dispositivo pequeno](/public/images/reactjs-rocket-x-launches-app-01.png)
 
 <br />
 
-### I:
+### Imagem do console do navegador mostrando a confirmação da criação do usuário e o recebimento do token de acesso:
 
-![Imagem da pagina /about construída com o pacote React-router-dom](/public/images/)
+![Imagem do console do navegador mostrando a confirmação](/public/images/reactjs-rocket-x-launches-app-02.png)
 
 <br />
 

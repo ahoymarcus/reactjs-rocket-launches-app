@@ -21,7 +21,10 @@ const Login = () => {
 				password
 			});
 			
-			console.log('setando credenciais.....');
+			console.log('setando credenciais = ', {
+				username,
+				password
+			});
 		}
 		
 		setUsername('');
@@ -33,7 +36,7 @@ const Login = () => {
 		<div className="login-container">
 			<header className="login-header">
 				<h1>Rocket-X Launches</h1>
-				<p>Cadastre-se aqui para poder acompanhar essa saga interestelar!</p>
+				<p>Cadastre-se aqui para acompanhar essa saga interestelar!</p>
 				
 			</header>
 			<main className="login-main">
