@@ -15,7 +15,7 @@ const Home = () => {
         <div className="home-container">
             <header className="home-header">
 							<h1>Rocket-X Launches</h1>
-							<p>Acompanhe os esforços da empresa Space X no desenvolvimento de seus novos foguetes conhecendo um pouco sobre seus lançamentos</p>
+							<p>Faça login e acompanhe conosco todos os esforços da empresa Space X no desenvolvimento de seus novos foguetes e conheça um pouco mais de seus lançamentos</p>
 							
 						</header>
 						<main className="home-main">

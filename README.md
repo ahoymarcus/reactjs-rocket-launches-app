@@ -11,14 +11,10 @@ O App foi escrito para ser cliente de uma API que consome dados de outra API ext
 
 <br />
 
-[SpaceX REST API - Github](https://github.com/r-spacex/SpaceX-API)
+[SpaceX](https://www.spacex.com/)
 
 <br />
 
-
-<br />
-
-[SpaceX REST API - Github](https://github.com/r-spacex/SpaceX-API)
 
 
 <br />
@@ -47,4 +43,4 @@ O App foi escrito para ser cliente de uma API que consome dados de outra API ext
 <br />
 <br />
 
-
+[^1]: [SpaceX REST API - Github](https://github.com/r-spacex/SpaceX-API)

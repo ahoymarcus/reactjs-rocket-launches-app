@@ -10,6 +10,7 @@
 .home-header {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	text-align: center;
 	padding: 20px 20px 5px 20px;
@@ -17,6 +18,7 @@
 
 .home-header p {
 	max-width: 800px;
+	color: #fb8787cc;
 }
 
 .home-info {
@@ -32,10 +34,13 @@
 
 .home-info li {
 	font-size: 1.2rem;
-	list-style: upper-roman;
-	margin-left: 50px;
+	/*list-style: upper-roman;
+	margin-left: 50px;*/
+	list-style: none;
 	padding-left: 35px;
 	color: #fb8787cc;
+	text-shadow: 1px 1px 2px red, 1px 1px 2px yellow;
+	text-align: center;
 }
 
 
@@ -43,6 +48,12 @@
 @media only screen and (min-width: 640px) {
 	.home-header, .home-info {
 		min-height: 280px;
+	}
+	.home-header p {
+		max-width: 70%;
+		font-size: 1.3rem;
+		margin-bottom: 10px;
+		line-height: 30px;
 	}
 }
 
@@ -52,16 +63,16 @@
 		padding-top: 13px;
 	}
 	.home-header p {
-		max-width: 95%;
+		max-width: 60%;
 	}
 	.home-info h2 {
-		margin-bottom: 0px;
+		margin-bottom: 30px;
 	}
 	.home-info li {
 		font-size: 1.3rem;
 
 		margin-left: 0px;
-		text-align: center;
+		margin-bottom: 25px;
 	}
 }
 
