@@ -12,9 +12,7 @@ const AppProvider = ({ children }) => {
 	const [ token, setToken ] = useState('');
 	
 	
-	
-	// https://www.digitalocean.com/community/tutorials/how-to-call-web-apis-with-the-useeffect-hook-in-react
-	// https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications
+
 	const loginUser = async (url, credentials) => {
 		try {
 			const response = await fetch(url, {
@@ -27,7 +25,7 @@ const AppProvider = ({ children }) => {
 			const data = await response.json();
 			
 			console.log(data);
-			const token = data;
+			const { token } = data;
 			
 			setToken(token);
 		} catch (err) {
@@ -45,7 +43,8 @@ const AppProvider = ({ children }) => {
 	return (
 		<AppContext.Provider 
 			value={{
-				setCredentials
+				setCredentials,
+				token
 			}}
 		>
 			{ children }
