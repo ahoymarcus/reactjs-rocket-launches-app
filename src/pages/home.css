@@ -52,8 +52,13 @@
 	color: #e9c9e9;
 	text-decoration: none;
 	margin-left: 20px;
+	cursor: pointer; 
 }
-
+.home-links:hover {
+	color: gray;
+	position: relative;
+	left: 10px;
+}
 
 
 @media only screen and (min-width: 600px) {

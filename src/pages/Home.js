@@ -11,9 +11,11 @@ const Home = () => {
 		
 		
 		
-		// const handleQuery = (query) => {
-			// setQueryPage(query);
-		// };
+		const handleQuery = (query) => {
+			setQueryPage(query);
+			
+			console.log(query);
+		};
 		
 
     return (
@@ -29,19 +31,19 @@ const Home = () => {
 								<ul>
 									<li>
 										Next Launch 
-										{token && <span className="home-links" onClick={setQueryPage('next')} > just hold tight...</span>}
+										{token && <span className="home-links" onClick={() => handleQuery('next')} > just hold tight...</span>}
 									</li>
 									<li>
 										Next Launches 
-										{token && <span className="home-links" onClick={setQueryPage('next-launches')} > let's go...</span>}
+										{token && <span className="home-links" onClick={() =>handleQuery('next-list')} > let's go...</span>}
 									</li>
 									<li>
 										Last Launch 
-										{token && <span className="home-links" onClick={setQueryPage('last')} > here...</span>}
+										{token && <span className="home-links" onClick={() => handleQuery('last')} > here...</span>}
 									</li>
 									<li>
 										Past Launches 
-										{token && <span className="home-links" onClick={setQueryPage('past')} > just come along...</span>}
+										{token && <span className="home-links" onClick={() => handleQuery('past')} > just come along...</span>}
 									</li>
 								</ul>
 							</section>

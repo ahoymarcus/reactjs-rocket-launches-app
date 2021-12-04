@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect, useCallback } from 'react';
 
 
 const loginUrl = 'http://localhost:3005/api/v1/login';
+const launchesUrl= 'http://localhost:3005/api/v1/launches/';
 
 
 const AppContext = React.createContext();
@@ -11,6 +12,7 @@ const AppProvider = ({ children }) => {
 	const [ credentials, setCredentials ] = useState({});
 	const [ token, setToken ] = useState('');
 	const [ queryPage, setQueryPage ] = useState('');
+	const [ launchList, setLaunchList ] = useState([]);
 	
 	
 
@@ -39,6 +41,27 @@ const AppProvider = ({ children }) => {
 		loginUser(loginUrl, credentials);
 	}, [credentials]);
 	
+	
+	const fetchLaunches = async (url) => {
+		try {
+			const response = await fetch(url);
+			const launches = await response.json();
+			
+			console.log(launches);
+			
+			
+		} catch (err) {
+			console.log(err);
+		}
+	};
+	
+	useEffect(() => {
+		if (!queryPage) {
+			return;
+		} else {
+			fetchLaunches(`${launchesUrl}${queryPage}`);
+		}
+	}, [queryPage]);
 	
 	
 	return (
