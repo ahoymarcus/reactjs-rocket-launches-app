@@ -25,6 +25,9 @@ const LaunchItem = ({ id, flight_number, name, date_unix, links }) => {
 	
 	const formattedTime = `${day}/${month}/${year}`;
 	
+	// if (!links.patch.small) {
+		// links.patch.small = ;
+	// }
 	
 	/*
 	links.webcast
@@ -34,7 +37,9 @@ links.patch.small
 	*/
 	return (
 		<article className="item-card" >
-			<img src={links.patch.small} alt="logo da missão" />
+			{links.patch.small ? <img src={links.patch.small} alt="logo da missão" /> : <p className="item-indisponivel" >Não Há Imagem Disponível</p>}
+			
+			
 			<h4 className="item-name">Missão: {name}</h4>
 			<div className="item-info-container">
 				<p className="item-info">missão nº {flight_number}</p>

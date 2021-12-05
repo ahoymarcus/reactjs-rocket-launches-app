@@ -5,6 +5,7 @@
 	box-shadow: 1px 1px black;
 	padding: 10px;
 	text-align: center;
+	
 	max-width: 600px;
 }
 
@@ -45,11 +46,9 @@
 	
 }
 
-/* .item-card h4 { */
-	
-/* } */
-
-/* .item-card p { */
-	
-/* } */
+.item-indisponivel {
+	color: gray;
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+}
 
