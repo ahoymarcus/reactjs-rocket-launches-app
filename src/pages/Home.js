@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './home.css';
 import { useGlobalContext } from '../context';
-import { Link } from 'react-router-dom';
+import LaunchList from '../components/LaunchList';
 
 
 
 const Home = () => {
-		const { token, queryPage, setQueryPage } = useGlobalContext();
+		const { token, queryPage, setQueryPage, launchList } = useGlobalContext();
 		
 		
 		
@@ -48,7 +49,9 @@ const Home = () => {
 								</ul>
 							</section>
 							<section className="home-list">
-								<p>{queryPage}</p>
+								<LaunchList launchList={launchList} />
+								
+								
 							</section>
 							
 						</main>

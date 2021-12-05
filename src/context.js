@@ -1,11 +1,25 @@
 import React, { useState, useContext, useEffect, useCallback } from 'react';
 
 
+
+const AppContext = React.createContext();
+
+
 const loginUrl = 'http://localhost:3005/api/v1/login';
 const launchesUrl= 'http://localhost:3005/api/v1/launches/';
 
 
-const AppContext = React.createContext();
+/*
+id
+flight_number
+links.webcast
+links.wikipedia
+cores.landing_attempt
+cores.reused
+name
+success
+date_utc
+*/
 
 
 const AppProvider = ({ children }) => {
@@ -44,12 +58,22 @@ const AppProvider = ({ children }) => {
 	
 	const fetchLaunches = async (url) => {
 		try {
-			const response = await fetch(url);
-			const launches = await response.json();
+			const response = await fetch(url, {
+				headers: {
+					'authorization': `Bearer ${token}`
+				}
+			});
+			const data = await response.json();
 			
-			console.log(launches);
+			console.log(data.length);
+			console.log(data);
 			
+			let launches = [];
+			launches.push(data);		
 			
+			console.log(launches.length);
+				
+			setLaunchList(launches);
 		} catch (err) {
 			console.log(err);
 		}
@@ -70,7 +94,8 @@ const AppProvider = ({ children }) => {
 				setCredentials,
 				token,
 				queryPage,
-				setQueryPage
+				setQueryPage,
+				launchList
 			}}
 		>
 			{ children }
