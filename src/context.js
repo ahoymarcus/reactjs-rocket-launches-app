@@ -69,10 +69,15 @@ const AppProvider = ({ children }) => {
 			console.log(data);
 			
 			let launches = [];
-			launches.push(data);		
+			if (queryPage === 'last') {
+				launches.push(data);
+			}	else {
+				launches = data;
+			}	
 			
 			console.log(launches.length);
-				
+			console.log(launches);
+			
 			setLaunchList(launches);
 		} catch (err) {
 			console.log(err);
