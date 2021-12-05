@@ -59,7 +59,9 @@ const AppProvider = ({ children }) => {
 			let launches = [];
 			if (queryPage === 'last') {
 				launches.push(data);
-			}	else {
+			}	else if (queryPage === 'next') {
+				launches.push(data[0]);
+			} else {
 				launches = data;
 			}	
 			
