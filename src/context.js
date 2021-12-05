@@ -9,18 +9,6 @@ const loginUrl = 'http://localhost:3005/api/v1/login';
 const launchesUrl= 'http://localhost:3005/api/v1/launches/';
 
 
-/*
-id
-flight_number
-links.webcast
-links.wikipedia
-cores.landing_attempt
-cores.reused
-name
-success
-date_utc
-*/
-
 
 const AppProvider = ({ children }) => {
 	const [ credentials, setCredentials ] = useState({});

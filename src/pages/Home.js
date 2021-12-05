@@ -28,7 +28,7 @@ const Home = () => {
 						</header>
 						<main className="home-main">
 							<section className="home-info">
-								<h2>Acompanhe conosco</h2>
+								<h2>Escolha seu próximo destino!</h2>
 								<ul>
 									<li>
 										Next Launch 

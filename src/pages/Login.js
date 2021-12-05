@@ -2,14 +2,19 @@ import React, { useState } from 'react';
 
 import './login.css';
 import { useGlobalContext } from '../context';
+import { Navigate } from 'react-router-dom';
 
 
 
 const Login = () => {
 	const [ username, setUsername ] = useState('');
 	const [ password, setPassword ] = useState('');
-	const { setCredentials } = useGlobalContext();
+	const { token, setCredentials } = useGlobalContext();
 	
+	
+	if (token) {
+		return <Navigate to='/' />
+	}
 	
 	
 	const handleSubmit = (e) => {
