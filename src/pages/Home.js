@@ -49,9 +49,7 @@ const Home = () => {
 								</ul>
 							</section>
 							<section className="home-list">
-								<LaunchList launchList={launchList} />
-								
-								
+								<LaunchList launchList={launchList} />	
 							</section>
 							
 						</main>

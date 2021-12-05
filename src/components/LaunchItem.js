@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './launchItem.css';
+
 
 
 /*
@@ -13,7 +15,7 @@ name
 success
 date_utc
 */
-const LaunchItem = ({ id, flight_number, name, date_unix }) => {
+const LaunchItem = ({ id, flight_number, name, date_unix, links }) => {
 	let newDate = new Date(date_unix * 1000);
 	console.log(newDate);
 	
@@ -27,12 +29,22 @@ const LaunchItem = ({ id, flight_number, name, date_unix }) => {
 	/*
 	links.webcast
 links.wikipedia
+links.patch.small
+							[0]
 	*/
 	return (
-		<article>
-			<h4>Nome da missão: {name}</h4>
-			<h4>Número do lançamento: {flight_number}</h4>
-			<h4>Data do lançamento: {formattedTime}</h4>
+		<article className="item-card" >
+			<img src={links.patch.small} alt="logo da missão" />
+			<h4 className="item-name">Missão: {name}</h4>
+			<div className="item-info-container">
+				<p className="item-info">missão nº {flight_number}</p>
+				<p className="item-info">lançamento: {formattedTime}</p>
+			</div>	
+				
+			<div className="item-links-container">
+				<p className="item-links"><a target="blank" href={links.webcast}>{links.webcast}</a></p>
+				<p className="item-links"><a target="blank" href={links.wikipedia}>{links.wikipedia}</a></p>
+			</div>
 		</article>
 	);
 };
