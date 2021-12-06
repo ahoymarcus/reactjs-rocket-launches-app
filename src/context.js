@@ -4,10 +4,13 @@ import React, { useState, useContext, useEffect, useCallback } from 'react';
 
 const AppContext = React.createContext();
 
-
+// Local server
 const loginUrl = 'http://localhost:3005/api/v1/login';
 const launchesUrl= 'http://localhost:3005/api/v1/launches/';
 
+// on Heroku
+const loginHerokuUrl = 'https://nodejs-rocket-lauches-api.herokuapp.com/api/v1/login';
+const launchesHerokuUrl= 'https://nodejs-rocket-lauches-api.herokuapp.com/api/v1/launches/';
 
 
 const AppProvider = ({ children }) => {
@@ -40,7 +43,7 @@ const AppProvider = ({ children }) => {
 	
 	
 	useEffect(() => {
-		loginUser(loginUrl, credentials);
+		loginUser(loginHerokuUrl, credentials);
 	}, [credentials]);
 	
 	
@@ -78,7 +81,7 @@ const AppProvider = ({ children }) => {
 		if (!queryPage) {
 			return;
 		} else {
-			fetchLaunches(`${launchesUrl}${queryPage}`);
+			fetchLaunches(`${launchesHerokuUrl}${queryPage}`);
 		}
 	}, [queryPage]);
 	
