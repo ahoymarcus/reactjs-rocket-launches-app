@@ -71,15 +71,15 @@ Finalmente, na estilização são usados arquivos de CSS ligados pelos component
 
 <br />
 
-### I:
+### Imagem da renderização para a busca **'last' mission** (última missão):
 
-![Imagem do sistema de busca feito na API de dados](/public/images/reactjs-rocket-launches-app-01.png)
+![Imagem da renderização para a busca last mission](/public/images/reactjs-rocket-launches-app-04.png)
 
 <br />
 
-### I:
+### Imagem da renderização para a busca **'past' mission** (missões passadas):
 
-![Imagem do sistema de busca feito na API de dados](/public/images/reactjs-rocket-launches-app-01.png)
+![Imagem da renderização para a busca past mission](/public/images/reactjs-rocket-launches-app-05.png)
 
 <br />
 
