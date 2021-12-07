@@ -50,9 +50,9 @@
 
 .home-query {
 	color: #e9c9e9;
-	
+	text-shadow: 1px 1px 2px red, 1px 1px 2px yellow;
 	margin-left: 20px;
-	/*cursor: pointer; */
+	cursor: pointer; 
 }
 .home-query:hover {
 	color: gray;

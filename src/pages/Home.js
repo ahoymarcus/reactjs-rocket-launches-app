@@ -35,17 +35,17 @@ const Home = () => {
 										{token && <span className="home-query" onClick={() => handleQuery('next')} > just hold tight...</span>}
 									</li>
 									<li>
-										{token === '' ? <Link to="/login" className="home-link" >Next Launches</Link> : <span className="home-toggle-link" >Next Launches</span>}
+										{token === '' ? <Link to="/login" className="home-toggle-link" >Next Launches</Link> : <span className="home-toggle-link" >Next Launches</span>}
 										 
 										{token && <span className="home-query" onClick={() =>handleQuery('next-list')} > let's go...</span>}
 									</li>
 									<li>
-										{token === '' ? <Link to="/login" className="home-link" >Last Launch</Link> : <span className="home-toggle-link" >Last Launch</span>}
+										{token === '' ? <Link to="/login" className="home-toggle-link" >Last Launch</Link> : <span className="home-toggle-link" >Last Launch</span>}
 										 
 										{token && <span className="home-query" onClick={() => handleQuery('last')} > here...</span>}
 									</li>
 									<li>
-										{token === '' ? <Link to="/login" className="home-link" >Past Launches</Link> : <span className="home-toggle-link" >Past Launches</span>}
+										{token === '' ? <Link to="/login" className="home-toggle-link" >Past Launches</Link> : <span className="home-toggle-link" >Past Launches</span>}
 										 
 										{token && <span className="home-query" onClick={() => handleQuery('past')} > just come along...</span>}
 									</li>
