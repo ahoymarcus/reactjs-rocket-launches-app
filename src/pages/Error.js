@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import rocketImg from '../images/space-x-in-space.webp';
+
 
 
 const ErrorPage = styled.div`
@@ -39,7 +41,7 @@ export default function Error() {
 
     return (
         <ErrorPage>
-					<Image src="./images/space-x-in-space.webp" alt="Plataforma de lançamento da Space X" /> 
+					<Image src={rocketImg} alt="Plataforma de lançamento da Space X" /> 
 					<SectionInfo>
 						<H1>404 - Página não encontrada</H1>
 						<p>Hora de retornar para Home Page</p> 

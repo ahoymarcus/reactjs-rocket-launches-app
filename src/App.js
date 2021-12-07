@@ -13,6 +13,7 @@ import Error from './pages/Error';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 
+import lauchingPadImg from './images/space-x-rest-api.jpg';
 
 
 
@@ -28,7 +29,7 @@ function App() {
 					<Route path="/login" element={<Login /> } />
           <Route path="*" element={<Error />} />
         </Routes>
-				<img className="rocket-image" src="./images/space-x-rest-api.jpg" alt="Plataforma de lançamento da Space X" />
+				<img className="rocket-image" src={lauchingPadImg} alt="Plataforma de lançamento da Space X" />
       </Router>
       
     </>
