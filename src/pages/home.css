@@ -37,14 +37,14 @@
 	/*list-style: upper-roman;
 	margin-left: 50px;*/
 	list-style: none;
+	padding-left: 35px;
+	text-align: center;
 }
 
 .home-link {
 	font-size: 1.2rem;
-	padding-left: 35px;
 	color: #fb8787cc;
 	text-shadow: 1px 1px 2px red, 1px 1px 2px yellow;
-	text-align: center;
 	text-decoration: none;
 }
 
