@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './home.css';
 import { useGlobalContext } from '../context';
@@ -13,9 +13,6 @@ const Home = () => {
 		
 		
 		const handleQuery = (query) => {
-			// if (!token) {
-				// return <Navigate to='/login' />;
-			// }
 			setQueryPage(query);
 			
 			console.log(query);
@@ -38,15 +35,18 @@ const Home = () => {
 										{token && <span className="home-links" onClick={() => handleQuery('next')} > just hold tight...</span>}
 									</li>
 									<li>
-										Next Launches 
+										{token === '' ? <Link to="/login" >Next Launches</Link> : 'Next Launches'}
+										 
 										{token && <span className="home-links" onClick={() =>handleQuery('next-list')} > let's go...</span>}
 									</li>
 									<li>
-										Last Launch 
+										{token === '' ? <Link to="/login" >Last Launch</Link> : 'Last Launch'}
+										 
 										{token && <span className="home-links" onClick={() => handleQuery('last')} > here...</span>}
 									</li>
 									<li>
-										Past Launches 
+										{token === '' ? <Link to="/login" >Past Launches</Link> : 'Past Launches'}
+										 
 										{token && <span className="home-links" onClick={() => handleQuery('past')} > just come along...</span>}
 									</li>
 								</ul>
