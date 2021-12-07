@@ -31,23 +31,23 @@ const Home = () => {
 								<h2>Escolha seu próximo destino!</h2>
 								<ul>
 									<li>
-										{token === '' ? <Link to="/login" >Next Launch</Link> : 'Next Launch'} 
-										{token && <span className="home-links" onClick={() => handleQuery('next')} > just hold tight...</span>}
+										{token === '' ? <Link to="/login" className="home-link" >Next Launch</Link> : 'Next Launch'} 
+										{token && <span className="home-query" onClick={() => handleQuery('next')} > just hold tight...</span>}
 									</li>
 									<li>
-										{token === '' ? <Link to="/login" >Next Launches</Link> : 'Next Launches'}
+										{token === '' ? <Link to="/login" className="home-link" >Next Launches</Link> : 'Next Launches'}
 										 
-										{token && <span className="home-links" onClick={() =>handleQuery('next-list')} > let's go...</span>}
+										{token && <span className="home-query" onClick={() =>handleQuery('next-list')} > let's go...</span>}
 									</li>
 									<li>
-										{token === '' ? <Link to="/login" >Last Launch</Link> : 'Last Launch'}
+										{token === '' ? <Link to="/login" className="home-link" >Last Launch</Link> : 'Last Launch'}
 										 
-										{token && <span className="home-links" onClick={() => handleQuery('last')} > here...</span>}
+										{token && <span className="home-query" onClick={() => handleQuery('last')} > here...</span>}
 									</li>
 									<li>
-										{token === '' ? <Link to="/login" >Past Launches</Link> : 'Past Launches'}
+										{token === '' ? <Link to="/login" className="home-link" >Past Launches</Link> : 'Past Launches'}
 										 
-										{token && <span className="home-links" onClick={() => handleQuery('past')} > just come along...</span>}
+										{token && <span className="home-query" onClick={() => handleQuery('past')} > just come along...</span>}
 									</li>
 								</ul>
 							</section>

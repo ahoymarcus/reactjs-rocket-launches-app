@@ -34,23 +34,27 @@
 }
 
 .home-info li {
-	font-size: 1.2rem;
 	/*list-style: upper-roman;
 	margin-left: 50px;*/
 	list-style: none;
+}
+
+.home-link {
+	font-size: 1.2rem;
 	padding-left: 35px;
 	color: #fb8787cc;
 	text-shadow: 1px 1px 2px red, 1px 1px 2px yellow;
 	text-align: center;
+	text-decoration: none;
 }
 
-.home-links {
+.home-query {
 	color: #e9c9e9;
-	text-decoration: none;
+	
 	margin-left: 20px;
-	cursor: pointer; 
+	/*cursor: pointer; */
 }
-.home-links:hover {
+.home-query:hover {
 	color: gray;
 	position: relative;
 	left: 10px;
