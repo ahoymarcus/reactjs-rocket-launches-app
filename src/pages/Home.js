@@ -13,9 +13,9 @@ const Home = () => {
 		
 		
 		const handleQuery = (query) => {
-			if (!token) {
-				return <Navigate to='login' />;
-			}
+			// if (!token) {
+				// return <Navigate to='/login' />;
+			// }
 			setQueryPage(query);
 			
 			console.log(query);
@@ -34,7 +34,7 @@ const Home = () => {
 								<h2>Escolha seu próximo destino!</h2>
 								<ul>
 									<li>
-										Next Launch 
+										{token === '' ? <Link to="/login" >Next Launch</Link> : 'Next Launch'} 
 										{token && <span className="home-links" onClick={() => handleQuery('next')} > just hold tight...</span>}
 									</li>
 									<li>
