@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 import './home.css';
 import { useGlobalContext } from '../context';
@@ -13,6 +13,9 @@ const Home = () => {
 		
 		
 		const handleQuery = (query) => {
+			if (!token) {
+				return <Navigate to='login' />;
+			}
 			setQueryPage(query);
 			
 			console.log(query);
