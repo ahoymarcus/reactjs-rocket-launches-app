@@ -11,7 +11,7 @@ O App foi escrito para ser cliente de uma API que consome dados de outra API ext
 
 <br />
 
-[O site da empresa SpaceX](https://www.spacex.com/)
+
 
 <br />
 
@@ -83,10 +83,17 @@ Finalmente, na estilização são usados arquivos de CSS ligados pelos component
 
 <br />
 
+Rocket-X Launches Apps:
 
+- [API na Heroku](https://nodejs-rocket-lauches-api.herokuapp.com/)
+
+- [App em Netlify](https://reactjs-rocket-launches-app.netlify.app/)
 
 
 <br />
+
+[O site da empresa SpaceX](https://www.spacex.com/)
+
 <br />
 
 [^1]: [SpaceX REST API - Github](https://github.com/r-spacex/SpaceX-API)
