@@ -11,6 +11,11 @@ O App foi escrito para ser cliente de uma API que consome dados de outra API ext
 
 <br />
 
+Rocket-X Launches Apps:
+
+- [API na Heroku](https://nodejs-rocket-lauches-api.herokuapp.com/)
+
+- [App em Netlify](https://reactjs-rocket-launches-app.netlify.app/)
 
 
 <br />
@@ -82,14 +87,6 @@ Finalmente, na estilização são usados arquivos de CSS ligados pelos component
 ![Imagem da renderização para a busca past mission](/public/images/reactjs-rocket-launches-app-05.png)
 
 <br />
-
-Rocket-X Launches Apps:
-
-- [API na Heroku](https://nodejs-rocket-lauches-api.herokuapp.com/)
-
-- [App em Netlify](https://reactjs-rocket-launches-app.netlify.app/)
-
-
 <br />
 
 [O site da empresa SpaceX](https://www.spacex.com/)
